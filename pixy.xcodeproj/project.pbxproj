@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		376262171CE7D52C00480373 /* PIXYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 376262161CE7D52C00480373 /* PIXYNetworking.m */; };
 		37BAFC491CE7C31800B29D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC481CE7C31800B29D1A /* main.m */; };
 		37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */; };
 		37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* ViewController.m */; };
@@ -28,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		1FA30E54157BE542DEDADE99 /* Pods-pixy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixy/Pods-pixy.debug.xcconfig"; sourceTree = "<group>"; };
+		376262151CE7D52C00480373 /* PIXYNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYNetworking.h; sourceTree = "<group>"; };
+		376262161CE7D52C00480373 /* PIXYNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYNetworking.m; sourceTree = "<group>"; };
 		37BAFC441CE7C31800B29D1A /* pixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC481CE7C31800B29D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +80,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		376262181CE7D54A00480373 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				376262151CE7D52C00480373 /* PIXYNetworking.h */,
+				376262161CE7D52C00480373 /* PIXYNetworking.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		376262191CE7D55500480373 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37BAFC4D1CE7C31800B29D1A /* ViewController.h */,
+				37BAFC4E1CE7C31800B29D1A /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		37BAFC3B1CE7C31800B29D1A = {
 			isa = PBXGroup;
 			children = (
@@ -102,10 +123,8 @@
 			children = (
 				37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */,
 				37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */,
-				37BAFC4D1CE7C31800B29D1A /* ViewController.h */,
-				37BAFC4E1CE7C31800B29D1A /* ViewController.m */,
-				37BAFC531CE7C31800B29D1A /* Assets.xcassets */,
-				37BAFC581CE7C31800B29D1A /* Info.plist */,
+				376262191CE7D55500480373 /* Controllers */,
+				376262181CE7D54A00480373 /* Networking */,
 				37BAFC471CE7C31800B29D1A /* Supporting Files */,
 			);
 			path = pixy;
@@ -114,6 +133,8 @@
 		37BAFC471CE7C31800B29D1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37BAFC531CE7C31800B29D1A /* Assets.xcassets */,
+				37BAFC581CE7C31800B29D1A /* Info.plist */,
 				37BAFC481CE7C31800B29D1A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -335,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */,
+				376262171CE7D52C00480373 /* PIXYNetworking.m in Sources */,
 				37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */,
 				37BAFC491CE7C31800B29D1A /* main.m in Sources */,
 			);

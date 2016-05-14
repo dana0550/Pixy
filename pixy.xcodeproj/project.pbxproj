@@ -10,10 +10,10 @@
 		37BAFC491CE7C31800B29D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC481CE7C31800B29D1A /* main.m */; };
 		37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */; };
 		37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* ViewController.m */; };
-		37BAFC521CE7C31800B29D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BAFC501CE7C31800B29D1A /* Main.storyboard */; };
 		37BAFC541CE7C31800B29D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BAFC531CE7C31800B29D1A /* Assets.xcassets */; };
-		37BAFC571CE7C31800B29D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BAFC551CE7C31800B29D1A /* LaunchScreen.storyboard */; };
 		37BAFC621CE7C31800B29D1A /* pixyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC611CE7C31800B29D1A /* pixyTests.m */; };
+		B92241AF4940F1E4648B8B25 /* Pods_pixyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F986B8A0C58DACE82C14921C /* Pods_pixyTests.framework */; };
+		E60587A5BA44B0E728D8F593 /* Pods_pixy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6770CF9B040908C5DA3E6E /* Pods_pixy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +27,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA30E54157BE542DEDADE99 /* Pods-pixy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixy/Pods-pixy.debug.xcconfig"; sourceTree = "<group>"; };
 		37BAFC441CE7C31800B29D1A /* pixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC481CE7C31800B29D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37BAFC4D1CE7C31800B29D1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37BAFC4E1CE7C31800B29D1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		37BAFC511CE7C31800B29D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37BAFC531CE7C31800B29D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37BAFC561CE7C31800B29D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37BAFC581CE7C31800B29D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37BAFC5D1CE7C31800B29D1A /* pixyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pixyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC611CE7C31800B29D1A /* pixyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pixyTests.m; sourceTree = "<group>"; };
 		37BAFC631CE7C31800B29D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F6F51A1C1D95B3478DFDE1 /* Pods-pixyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixyTests/Pods-pixyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC6770CF9B040908C5DA3E6E /* Pods_pixy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B58A08A50B14D51B0B99B504 /* Pods-pixy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixy.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixy/Pods-pixy.release.xcconfig"; sourceTree = "<group>"; };
+		EE89295312D9802005D8E0B5 /* Pods-pixyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixyTests/Pods-pixyTests.release.xcconfig"; sourceTree = "<group>"; };
+		F986B8A0C58DACE82C14921C /* Pods_pixyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E60587A5BA44B0E728D8F593 /* Pods_pixy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +59,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92241AF4940F1E4648B8B25 /* Pods_pixyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C25F1DD162D7A1410AE100B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FA30E54157BE542DEDADE99 /* Pods-pixy.debug.xcconfig */,
+				B58A08A50B14D51B0B99B504 /* Pods-pixy.release.xcconfig */,
+				83F6F51A1C1D95B3478DFDE1 /* Pods-pixyTests.debug.xcconfig */,
+				EE89295312D9802005D8E0B5 /* Pods-pixyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		37BAFC3B1CE7C31800B29D1A = {
 			isa = PBXGroup;
 			children = (
 				37BAFC461CE7C31800B29D1A /* pixy */,
 				37BAFC601CE7C31800B29D1A /* pixyTests */,
 				37BAFC451CE7C31800B29D1A /* Products */,
+				1C25F1DD162D7A1410AE100B /* Pods */,
+				48A08FA598F0F0D86D6D69C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +104,7 @@
 				37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */,
 				37BAFC4D1CE7C31800B29D1A /* ViewController.h */,
 				37BAFC4E1CE7C31800B29D1A /* ViewController.m */,
-				37BAFC501CE7C31800B29D1A /* Main.storyboard */,
 				37BAFC531CE7C31800B29D1A /* Assets.xcassets */,
-				37BAFC551CE7C31800B29D1A /* LaunchScreen.storyboard */,
 				37BAFC581CE7C31800B29D1A /* Info.plist */,
 				37BAFC471CE7C31800B29D1A /* Supporting Files */,
 			);
@@ -111,6 +128,15 @@
 			path = pixyTests;
 			sourceTree = "<group>";
 		};
+		48A08FA598F0F0D86D6D69C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC6770CF9B040908C5DA3E6E /* Pods_pixy.framework */,
+				F986B8A0C58DACE82C14921C /* Pods_pixyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37BAFC661CE7C31900B29D1A /* Build configuration list for PBXNativeTarget "pixy" */;
 			buildPhases = (
+				15379963D73771E692CA12A9 /* 📦 Check Pods Manifest.lock */,
 				37BAFC401CE7C31800B29D1A /* Sources */,
 				37BAFC411CE7C31800B29D1A /* Frameworks */,
 				37BAFC421CE7C31800B29D1A /* Resources */,
+				CAC1DAC20371CA08E3723F92 /* 📦 Embed Pods Frameworks */,
+				E8E6331C960497A9804B2B73 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37BAFC691CE7C31900B29D1A /* Build configuration list for PBXNativeTarget "pixyTests" */;
 			buildPhases = (
+				E923BB84610080CD4444A7D7 /* 📦 Check Pods Manifest.lock */,
 				37BAFC591CE7C31800B29D1A /* Sources */,
 				37BAFC5A1CE7C31800B29D1A /* Frameworks */,
 				37BAFC5B1CE7C31800B29D1A /* Resources */,
+				D4A74EC6B1B804EA3CEA6ECE /* 📦 Embed Pods Frameworks */,
+				FB56B0C467A8CCA33B413590 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,9 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BAFC571CE7C31800B29D1A /* LaunchScreen.storyboard in Resources */,
 				37BAFC541CE7C31800B29D1A /* Assets.xcassets in Resources */,
-				37BAFC521CE7C31800B29D1A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +235,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15379963D73771E692CA12A9 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAC1DAC20371CA08E3723F92 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixy/Pods-pixy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A74EC6B1B804EA3CEA6ECE /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixyTests/Pods-pixyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8E6331C960497A9804B2B73 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixy/Pods-pixy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E923BB84610080CD4444A7D7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB56B0C467A8CCA33B413590 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixyTests/Pods-pixyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		37BAFC401CE7C31800B29D1A /* Sources */ = {
@@ -234,25 +357,6 @@
 			targetProxy = 37BAFC5E1CE7C31800B29D1A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		37BAFC501CE7C31800B29D1A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37BAFC511CE7C31800B29D1A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		37BAFC551CE7C31800B29D1A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37BAFC561CE7C31800B29D1A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		37BAFC641CE7C31900B29D1A /* Debug */ = {
@@ -292,7 +396,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -330,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -339,8 +443,10 @@
 		};
 		37BAFC671CE7C31900B29D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA30E54157BE542DEDADE99 /* Pods-pixy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = pixy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appadana.pixy;
@@ -350,8 +456,10 @@
 		};
 		37BAFC681CE7C31900B29D1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B58A08A50B14D51B0B99B504 /* Pods-pixy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = pixy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appadana.pixy;
@@ -361,6 +469,7 @@
 		};
 		37BAFC6A1CE7C31900B29D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F6F51A1C1D95B3478DFDE1 /* Pods-pixyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = pixyTests/Info.plist;
@@ -373,6 +482,7 @@
 		};
 		37BAFC6B1CE7C31900B29D1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE89295312D9802005D8E0B5 /* Pods-pixyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = pixyTests/Info.plist;
@@ -402,6 +512,7 @@
 				37BAFC681CE7C31900B29D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		37BAFC691CE7C31900B29D1A /* Build configuration list for PBXNativeTarget "pixyTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +521,7 @@
 				37BAFC6B1CE7C31900B29D1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

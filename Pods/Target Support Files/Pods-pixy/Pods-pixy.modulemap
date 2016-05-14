@@ -1,0 +1,6 @@
+framework module Pods_pixy {
+  umbrella header "Pods-pixy-umbrella.h"
+
+  export *
+  module * { export * }
+}

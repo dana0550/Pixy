@@ -52,7 +52,12 @@
            success:(void(^)(NSDictionary *postsDictionary))success
         andFailure:(void(^)(NSError *error))failure
 {
-    [self GET:@"/r/pics/hot.json"
+    NSString *url = @"/r/pics/hot.json";
+    if (nextPage.length > 0) {
+        NSString *after = [NSString stringWithFormat:@"?after=%@", nextPage];
+        url = [url stringByAppendingString:after];
+    }
+    [self GET:url
    parameters:nil
       success:^(AFHTTPRequestOperation *operation, id responseObject) {
           

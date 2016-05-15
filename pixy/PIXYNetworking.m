@@ -7,6 +7,7 @@
 //
 
 #import "PIXYNetworking.h"
+#import "PIXYPostModel.h"
 @import AFNetworking;
 
 @interface PIXYNetworking()
@@ -47,15 +48,24 @@
 #pragma mark - Posts
 #pragma ------------------------------------------------------------------------
 
-- (void)fetchPosts:(NSString *)nextPageURL
+- (void)fetchPosts:(NSString *)nextPage
            success:(void(^)(NSDictionary *postsDictionary))success
         andFailure:(void(^)(NSError *error))failure
 {
-    [self GET:@"/r/pics/hot.json?limit=1"
+    [self GET:@"/r/pics/hot.json"
    parameters:nil
       success:^(AFHTTPRequestOperation *operation, id responseObject) {
           
-          NSLog(@"%@", responseObject);
+          NSArray *dataArray = [[responseObject objectForKey:@"data"] objectForKey:@"children"];
+          NSArray<PIXYPostModel *> *posts = [PIXYPostModel getModelsFromArray:dataArray];
+          
+          // Next Page Value
+          NSString *nextPageValue = [[responseObject objectForKey:@"data"] objectForKey:@"after"];
+          if (nextPageValue == nil) nextPageValue = @"";
+          
+          NSDictionary *postsDict = @{@"nextPage"   : nextPageValue,
+                                      @"posts"      : posts};
+          if (success) success(postsDict);
           
       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
           if (failure) failure(error);

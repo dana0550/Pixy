@@ -55,4 +55,15 @@
  */
 @property (nonatomic, copy) NSString *postTitle;
 
+/**
+ Fetches posts from subreddit.
+ @param nextPage Optional value to pass along with the request. Used for
+ pagination.
+ @returns A dictionary containing 2 key value pairs. nextPage contains value
+ used the get the next page of posts. posts contains array of posts.
+ */
++ (void)fetchPosts:(NSString *)nextPage
+           success:(void(^)(NSDictionary *postsDictionary))success
+           failure:(void(^)(NSError *error))failure;
+
 @end

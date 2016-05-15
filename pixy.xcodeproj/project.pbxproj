@@ -10,6 +10,7 @@
 		376262171CE7D52C00480373 /* PIXYNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 376262161CE7D52C00480373 /* PIXYNetworking.m */; };
 		378782681CE7E3FE00684FFF /* PIXYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 378782671CE7E3FE00684FFF /* PIXYBaseModel.m */; };
 		3787826C1CE7E48200684FFF /* PIXYPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787826B1CE7E48200684FFF /* PIXYPostModel.m */; };
+		3787826F1CE822A400684FFF /* PIXYPostsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */; };
 		37BAFC491CE7C31800B29D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC481CE7C31800B29D1A /* main.m */; };
 		37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */; };
 		37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* ViewController.m */; };
@@ -37,6 +38,8 @@
 		378782671CE7E3FE00684FFF /* PIXYBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYBaseModel.m; sourceTree = "<group>"; };
 		3787826A1CE7E48200684FFF /* PIXYPostModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYPostModel.h; sourceTree = "<group>"; };
 		3787826B1CE7E48200684FFF /* PIXYPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYPostModel.m; sourceTree = "<group>"; };
+		3787826D1CE822A400684FFF /* PIXYPostsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYPostsDatasource.h; sourceTree = "<group>"; };
+		3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYPostsDatasource.m; sourceTree = "<group>"; };
 		37BAFC441CE7C31800B29D1A /* pixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC481CE7C31800B29D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +118,15 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		378782701CE8FE1B00684FFF /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				3787826D1CE822A400684FFF /* PIXYPostsDatasource.h */,
+				3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */,
+			);
+			name = Datasources;
+			sourceTree = "<group>";
+		};
 		37BAFC3B1CE7C31800B29D1A = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +153,7 @@
 				37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */,
 				37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */,
 				376262191CE7D55500480373 /* Controllers */,
+				378782701CE8FE1B00684FFF /* Datasources */,
 				378782691CE7E46100684FFF /* Models */,
 				376262181CE7D54A00480373 /* Networking */,
 				37BAFC471CE7C31800B29D1A /* Supporting Files */,
@@ -378,6 +391,7 @@
 				378782681CE7E3FE00684FFF /* PIXYBaseModel.m in Sources */,
 				376262171CE7D52C00480373 /* PIXYNetworking.m in Sources */,
 				37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */,
+				3787826F1CE822A400684FFF /* PIXYPostsDatasource.m in Sources */,
 				37BAFC491CE7C31800B29D1A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FA30E54157BE542DEDADE99 /* Pods-pixy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = pixy/Info.plist;
@@ -500,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B58A08A50B14D51B0B99B504 /* Pods-pixy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = pixy/Info.plist;

@@ -34,10 +34,12 @@
     return self;
 }
 
-+ (NSArray *)getModelsFromArray:(NSArray *)array
++ (NSArray *)getModelsFromArray:(NSArray *)JSONarray
 {
     NSError *error;
-    NSArray *modelArray = [MTLJSONAdapter modelsOfClass:self.class fromJSONArray:array error:&error];
+    NSArray *modelArray = [MTLJSONAdapter modelsOfClass:self.class
+                                          fromJSONArray:JSONarray
+                                                  error:&error];
     if (error) {
         NSLog(@"Get Models From Array ERROR %@", error.localizedDescription);
     }

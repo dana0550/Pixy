@@ -7,6 +7,7 @@
 //
 
 #import "PIXYPostModel.h"
+#include "PIXYNetworking.h"
 
 @implementation PIXYPostModel
 
@@ -35,8 +36,6 @@
                                                                  NSError *__autoreleasing *error) {
         NSDate *date = [NSDate dateWithTimeIntervalSince1970:[created intValue]];
         return date;
-    } reverseBlock:^id(NSDate *date, BOOL *success, NSError *__autoreleasing *error) {
-        return [self.dateFormatter stringFromDate:date];
     }];
 }
 
@@ -52,15 +51,39 @@
     return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
 }
 
++ (NSArray *)getModelsFromArray:(NSArray *)JSONarray
+{
+    // Preprocessing of Array
+    NSMutableArray *tempArray = [NSMutableArray new];
+    for (NSDictionary *JSONDictionary in JSONarray) {
+        [tempArray addObject:JSONDictionary[@"data"]];
+    }
+    
+    NSError *error;
+    NSArray *modelArray = [MTLJSONAdapter modelsOfClass:self.class
+                                          fromJSONArray:tempArray
+                                                  error:&error];
+    if (error) {
+        NSLog(@"Error getting model objects: %@", error.localizedDescription);
+    }
+    
+    return modelArray;
+}
+
 #pragma ------------------------------------------------------------------------
-#pragma mark - Utilities
+#pragma mark - Networking
 #pragma ------------------------------------------------------------------------
 
-+ (NSDateFormatter *)dateFormatter {
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    dateFormatter.locale = [[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"];
-    dateFormatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssZZZ";
-    return dateFormatter;
++ (void)fetchPosts:(NSString *)nextPage
+           success:(void(^)(NSDictionary *postsDictionary))success
+           failure:(void(^)(NSError *error))failure
+{
+    [[PIXYNetworking sharedInstance] fetchPosts:nextPage
+                                        success:^(NSDictionary *postsDictionary) {
+                                            if (success) success(postsDictionary);
+                                        } andFailure:^(NSError *error) {
+                                            if (failure) failure(error);
+                                        }];
 }
 
 @end

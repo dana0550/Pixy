@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "PIXYNetworking.h"
+#import "PIXYPostsDatasource.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) PIXYPostsDatasource *postsDatasource;
 
 @end
 
@@ -32,6 +34,19 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma ------------------------------------------------------------------------
+#pragma mark - Object Creators
+#pragma ------------------------------------------------------------------------
+
+- (PIXYPostsDatasource *)postsDatasource
+{
+    return !_postsDatasource ? _postsDatasource =
+    ({
+        PIXYPostsDatasource *object = [[PIXYPostsDatasource alloc] init];
+        object;
+    }) : _postsDatasource;
 }
 
 @end

@@ -93,8 +93,7 @@ NSString * const MTLJSONAdapterThrownExceptionErrorKey = @"MTLJSONAdapterThrownE
 
 	NSMutableArray *models = [NSMutableArray arrayWithCapacity:JSONArray.count];
 	for (NSDictionary *JSONDictionary in JSONArray){
-        NSDictionary *dict = [JSONDictionary objectForKey:@"data"];
-		MTLModel *model = [self modelOfClass:modelClass fromJSONDictionary:dict error:error];
+		MTLModel *model = [self modelOfClass:modelClass fromJSONDictionary:JSONDictionary error:error];
 		if (model == nil) return nil;
 		[models addObject:model];
 	}

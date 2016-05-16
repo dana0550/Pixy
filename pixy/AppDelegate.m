@@ -23,9 +23,11 @@
     self.window.backgroundColor = [UIColor whiteColor];
     PIXYFeedViewController *vc = [[PIXYFeedViewController alloc] initWithNibName:@"PIXYFeedViewController"
                                                                           bundle:nil];
-    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
-    self.window.rootViewController = nc;
+    self.navContoller = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = self.navContoller;
     [self.window makeKeyAndVisible];
+    
+    [self setNavigationBarStyle];
     
     return YES;
 }
@@ -50,6 +52,28 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma ------------------------------------------------------------------------
+#pragma mark - Private Methods
+#pragma ------------------------------------------------------------------------
+
+- (void)setNavigationBarStyle
+{
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    UIFont *font = [UIFont fontWithName:@"AvenirNext-DemiBold"
+                                   size:16.0f];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{
+                                                           NSForegroundColorAttributeName : [UIColor whiteColor],
+                                                           NSFontAttributeName : font
+                                                           }];
+    UIColor *barColor = [UIColor colorWithRed:(101.0/255.0)
+                                        green:(175.0/255.0)
+                                         blue:(255.0/255.0)
+                                        alpha:1.0f];
+    [[UINavigationBar appearance] setBarTintColor:barColor];
+    [[UINavigationBar appearance] setTranslucent:YES];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
 @end

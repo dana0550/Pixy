@@ -7,6 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PIXYImageViewController">
             <connections>
+                <outlet property="backgroundImageView" destination="cLL-if-6xY" id="ChM-kT-biH"/>
+                <outlet property="imageScrollView" destination="bks-cU-qi2" id="lba-aN-Odp"/>
+                <outlet property="overlayView" destination="DQx-Vt-p3Q" id="oXl-eQ-QuR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +17,48 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="cLL-if-6xY" userLabel="Background Image View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="37W-5q-AjI"/>
+                        <constraint firstAttribute="width" constant="240" id="mLX-Ai-QAm"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="37W-5q-AjI"/>
+                            <exclude reference="mLX-Ai-QAm"/>
+                        </mask>
+                    </variation>
+                </imageView>
+                <view alpha="0.0" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="DQx-Vt-p3Q" userLabel="Overlay View">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bks-cU-qi2">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Rnb-yq-txL"/>
+                    </connections>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DQx-Vt-p3Q" firstAttribute="width" secondItem="cLL-if-6xY" secondAttribute="width" id="4ww-Ga-iGx"/>
+                <constraint firstAttribute="trailing" secondItem="cLL-if-6xY" secondAttribute="trailing" id="6Fe-Et-Ktg"/>
+                <constraint firstItem="bks-cU-qi2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C59-qq-FEi"/>
+                <constraint firstItem="bks-cU-qi2" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="LGm-lq-fGj"/>
+                <constraint firstItem="cLL-if-6xY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PeR-3j-esi"/>
+                <constraint firstAttribute="bottom" secondItem="cLL-if-6xY" secondAttribute="bottom" id="Vqv-DM-AdE"/>
+                <constraint firstItem="DQx-Vt-p3Q" firstAttribute="centerY" secondItem="cLL-if-6xY" secondAttribute="centerY" id="X7c-lk-XrN"/>
+                <constraint firstItem="cLL-if-6xY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XS5-8a-BKH"/>
+                <constraint firstItem="bks-cU-qi2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="bzt-tG-1zf"/>
+                <constraint firstItem="DQx-Vt-p3Q" firstAttribute="height" secondItem="cLL-if-6xY" secondAttribute="height" id="ge2-VH-x3S"/>
+                <constraint firstItem="bks-cU-qi2" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="pw7-38-4rZ"/>
+                <constraint firstItem="DQx-Vt-p3Q" firstAttribute="centerX" secondItem="cLL-if-6xY" secondAttribute="centerX" id="vVd-L2-HxD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="840" y="387"/>
         </view>
     </objects>
 </document>

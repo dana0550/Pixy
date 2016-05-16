@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class PIXYPostModel;
+
 @interface PIXYImageViewController : UIViewController
+
+@property (weak, nonatomic) PIXYPostModel *post;
+@property (strong, nonatomic) UIImage *backgroundImage;
+@property (assign, nonatomic) CGRect initialThumbnailFrame;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PIXYPostModel.h"
 #include "PIXYNetworking.h"
+#import "DateTools.h"
 
 @implementation PIXYPostModel
 
@@ -43,9 +44,13 @@
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
                                                                  BOOL *success,
                                                                  NSError *__autoreleasing *error) {
-        NSString *prefix = @"https://www.reddit.com";
+        // Create mobile url
+        NSString *prefix = @"https://m.reddit.com";
         NSString *secureURLString = [prefix stringByAppendingString:urlString];
+        NSString *mobileParam = @"?utm_source=mweb_redirect&compact=true";
+        secureURLString = [secureURLString stringByAppendingString:mobileParam];
         NSURL *url = [NSURL URLWithString:secureURLString];
+        
         return url;
     }];
 }
@@ -54,6 +59,9 @@
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
                                                                  BOOL *success,
                                                                  NSError *__autoreleasing *error) {
+        if ([urlString isEqualToString:@"self"]) {
+            return nil;
+        }
         NSString *secureURLString = [urlString stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
         NSURL *url = [NSURL URLWithString:secureURLString];
         return url;
@@ -64,6 +72,9 @@
     return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
                                                                  BOOL *success,
                                                                  NSError *__autoreleasing *error) {
+        if ([urlString isEqualToString:@"self"]) {
+            return nil;
+        }
         NSString *secureURLString = [urlString stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
         NSURL *url = [NSURL URLWithString:secureURLString];
         return url;
@@ -103,6 +114,18 @@
                                         } andFailure:^(NSError *error) {
                                             if (failure) failure(error);
                                         }];
+}
+
+#pragma ------------------------------------------------------------------------
+#pragma mark - Public Helpers
+#pragma ------------------------------------------------------------------------
+
+- (NSString *)formattedAuthorString
+{
+    NSString *string = [NSString stringWithFormat:@"%@ \u2022 %@",
+                        self.author,
+                        [self.created shortTimeAgoSinceNow]];
+    return string;
 }
 
 @end

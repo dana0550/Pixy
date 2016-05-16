@@ -66,4 +66,9 @@
            success:(void(^)(NSDictionary *postsDictionary))success
            failure:(void(^)(NSError *error))failure;
 
+/**
+ This returns the author name along with a short time stamp.
+ */
+- (NSString *)formattedAuthorString;
+
 @end

@@ -11,6 +11,7 @@
 		378782681CE7E3FE00684FFF /* PIXYBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 378782671CE7E3FE00684FFF /* PIXYBaseModel.m */; };
 		3787826C1CE7E48200684FFF /* PIXYPostModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787826B1CE7E48200684FFF /* PIXYPostModel.m */; };
 		3787826F1CE822A400684FFF /* PIXYPostsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */; };
+		379206771CE96E9D00D8807B /* PIXYUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 379206761CE96E9C00D8807B /* PIXYUtilities.m */; };
 		37BAFC491CE7C31800B29D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC481CE7C31800B29D1A /* main.m */; };
 		37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */; };
 		37BAFC4F1CE7C31800B29D1A /* PIXYFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */; };
@@ -45,6 +46,8 @@
 		3787826B1CE7E48200684FFF /* PIXYPostModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYPostModel.m; sourceTree = "<group>"; };
 		3787826D1CE822A400684FFF /* PIXYPostsDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYPostsDatasource.h; sourceTree = "<group>"; };
 		3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYPostsDatasource.m; sourceTree = "<group>"; };
+		379206751CE96E9C00D8807B /* PIXYUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYUtilities.h; sourceTree = "<group>"; };
+		379206761CE96E9C00D8807B /* PIXYUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYUtilities.m; sourceTree = "<group>"; };
 		37BAFC441CE7C31800B29D1A /* pixy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC481CE7C31800B29D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3747806C1CEA5EFB00675A27 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				379206751CE96E9C00D8807B /* PIXYUtilities.h */,
+				379206761CE96E9C00D8807B /* PIXYUtilities.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		376262181CE7D54A00480373 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,12 +125,12 @@
 		376262191CE7D55500480373 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				37BAFC4D1CE7C31800B29D1A /* PIXYFeedViewController.h */,
-				37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */,
-				37EE32A81CE9056600B74363 /* PIXYFeedViewController.xib */,
 				37EE32AF1CE90B7600B74363 /* PIXYFeedTableViewCell.h */,
 				37EE32B01CE90B7600B74363 /* PIXYFeedTableViewCell.m */,
 				37EE32B11CE90B7600B74363 /* PIXYFeedTableViewCell.xib */,
+				37BAFC4D1CE7C31800B29D1A /* PIXYFeedViewController.h */,
+				37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */,
+				37EE32A81CE9056600B74363 /* PIXYFeedViewController.xib */,
 				37EE32B41CE93B6900B74363 /* PIXYImageViewController.h */,
 				37EE32B51CE93B6900B74363 /* PIXYImageViewController.m */,
 				37EE32B61CE93B6900B74363 /* PIXYImageViewController.xib */,
@@ -175,6 +187,7 @@
 				378782701CE8FE1B00684FFF /* Datasources */,
 				378782691CE7E46100684FFF /* Models */,
 				376262181CE7D54A00480373 /* Networking */,
+				3747806C1CEA5EFB00675A27 /* Utilities */,
 				37BAFC471CE7C31800B29D1A /* Supporting Files */,
 			);
 			path = pixy;
@@ -409,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE32B71CE93B6900B74363 /* PIXYImageViewController.m in Sources */,
+				379206771CE96E9D00D8807B /* PIXYUtilities.m in Sources */,
 				37BAFC4F1CE7C31800B29D1A /* PIXYFeedViewController.m in Sources */,
 				3787826C1CE7E48200684FFF /* PIXYPostModel.m in Sources */,
 				378782681CE7E3FE00684FFF /* PIXYBaseModel.m in Sources */,

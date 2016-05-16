@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "PIXYFeedViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +21,10 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    ViewController *viewController = [[ViewController alloc] init];
-    self.window.rootViewController = viewController;
+    PIXYFeedViewController *vc = [[PIXYFeedViewController alloc] initWithNibName:@"PIXYFeedViewController"
+                                                                          bundle:nil];
+    UINavigationController *nc = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nc;
     [self.window makeKeyAndVisible];
     
     return YES;

@@ -13,9 +13,14 @@
 		3787826F1CE822A400684FFF /* PIXYPostsDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787826E1CE822A400684FFF /* PIXYPostsDatasource.m */; };
 		37BAFC491CE7C31800B29D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC481CE7C31800B29D1A /* main.m */; };
 		37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */; };
-		37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* ViewController.m */; };
+		37BAFC4F1CE7C31800B29D1A /* PIXYFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */; };
 		37BAFC541CE7C31800B29D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BAFC531CE7C31800B29D1A /* Assets.xcassets */; };
 		37BAFC621CE7C31800B29D1A /* pixyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BAFC611CE7C31800B29D1A /* pixyTests.m */; };
+		37EE32A91CE9056600B74363 /* PIXYFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EE32A81CE9056600B74363 /* PIXYFeedViewController.xib */; };
+		37EE32B21CE90B7600B74363 /* PIXYFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EE32B01CE90B7600B74363 /* PIXYFeedTableViewCell.m */; };
+		37EE32B31CE90B7600B74363 /* PIXYFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EE32B11CE90B7600B74363 /* PIXYFeedTableViewCell.xib */; };
+		37EE32B71CE93B6900B74363 /* PIXYImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37EE32B51CE93B6900B74363 /* PIXYImageViewController.m */; };
+		37EE32B81CE93B6900B74363 /* PIXYImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37EE32B61CE93B6900B74363 /* PIXYImageViewController.xib */; };
 		B92241AF4940F1E4648B8B25 /* Pods_pixyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F986B8A0C58DACE82C14921C /* Pods_pixyTests.framework */; };
 		E60587A5BA44B0E728D8F593 /* Pods_pixy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC6770CF9B040908C5DA3E6E /* Pods_pixy.framework */; };
 /* End PBXBuildFile section */
@@ -44,13 +49,20 @@
 		37BAFC481CE7C31800B29D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37BAFC4A1CE7C31800B29D1A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		37BAFC4B1CE7C31800B29D1A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		37BAFC4D1CE7C31800B29D1A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		37BAFC4E1CE7C31800B29D1A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37BAFC4D1CE7C31800B29D1A /* PIXYFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIXYFeedViewController.h; sourceTree = "<group>"; };
+		37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIXYFeedViewController.m; sourceTree = "<group>"; };
 		37BAFC531CE7C31800B29D1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37BAFC581CE7C31800B29D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37BAFC5D1CE7C31800B29D1A /* pixyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pixyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		37BAFC611CE7C31800B29D1A /* pixyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pixyTests.m; sourceTree = "<group>"; };
 		37BAFC631CE7C31800B29D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37EE32A81CE9056600B74363 /* PIXYFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIXYFeedViewController.xib; sourceTree = "<group>"; };
+		37EE32AF1CE90B7600B74363 /* PIXYFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYFeedTableViewCell.h; sourceTree = "<group>"; };
+		37EE32B01CE90B7600B74363 /* PIXYFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYFeedTableViewCell.m; sourceTree = "<group>"; };
+		37EE32B11CE90B7600B74363 /* PIXYFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIXYFeedTableViewCell.xib; sourceTree = "<group>"; };
+		37EE32B41CE93B6900B74363 /* PIXYImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIXYImageViewController.h; sourceTree = "<group>"; };
+		37EE32B51CE93B6900B74363 /* PIXYImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIXYImageViewController.m; sourceTree = "<group>"; };
+		37EE32B61CE93B6900B74363 /* PIXYImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PIXYImageViewController.xib; sourceTree = "<group>"; };
 		83F6F51A1C1D95B3478DFDE1 /* Pods-pixyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixyTests/Pods-pixyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6770CF9B040908C5DA3E6E /* Pods_pixy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B58A08A50B14D51B0B99B504 /* Pods-pixy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixy.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixy/Pods-pixy.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,8 +113,15 @@
 		376262191CE7D55500480373 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				37BAFC4D1CE7C31800B29D1A /* ViewController.h */,
-				37BAFC4E1CE7C31800B29D1A /* ViewController.m */,
+				37BAFC4D1CE7C31800B29D1A /* PIXYFeedViewController.h */,
+				37BAFC4E1CE7C31800B29D1A /* PIXYFeedViewController.m */,
+				37EE32A81CE9056600B74363 /* PIXYFeedViewController.xib */,
+				37EE32AF1CE90B7600B74363 /* PIXYFeedTableViewCell.h */,
+				37EE32B01CE90B7600B74363 /* PIXYFeedTableViewCell.m */,
+				37EE32B11CE90B7600B74363 /* PIXYFeedTableViewCell.xib */,
+				37EE32B41CE93B6900B74363 /* PIXYImageViewController.h */,
+				37EE32B51CE93B6900B74363 /* PIXYImageViewController.m */,
+				37EE32B61CE93B6900B74363 /* PIXYImageViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -275,6 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EE32B81CE93B6900B74363 /* PIXYImageViewController.xib in Resources */,
+				37EE32B31CE90B7600B74363 /* PIXYFeedTableViewCell.xib in Resources */,
+				37EE32A91CE9056600B74363 /* PIXYFeedViewController.xib in Resources */,
 				37BAFC541CE7C31800B29D1A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -386,9 +408,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37BAFC4F1CE7C31800B29D1A /* ViewController.m in Sources */,
+				37EE32B71CE93B6900B74363 /* PIXYImageViewController.m in Sources */,
+				37BAFC4F1CE7C31800B29D1A /* PIXYFeedViewController.m in Sources */,
 				3787826C1CE7E48200684FFF /* PIXYPostModel.m in Sources */,
 				378782681CE7E3FE00684FFF /* PIXYBaseModel.m in Sources */,
+				37EE32B21CE90B7600B74363 /* PIXYFeedTableViewCell.m in Sources */,
 				376262171CE7D52C00480373 /* PIXYNetworking.m in Sources */,
 				37BAFC4C1CE7C31800B29D1A /* AppDelegate.m in Sources */,
 				3787826F1CE822A400684FFF /* PIXYPostsDatasource.m in Sources */,

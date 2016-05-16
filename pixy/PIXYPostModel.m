@@ -39,16 +39,35 @@
     }];
 }
 
-+ (NSValueTransformer *)permalinkURLJSONTransformer {
-    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
++ (NSValueTransformer *)permalinkJSONTransformer {
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
+                                                                 BOOL *success,
+                                                                 NSError *__autoreleasing *error) {
+        NSString *prefix = @"https://www.reddit.com";
+        NSString *secureURLString = [prefix stringByAppendingString:urlString];
+        NSURL *url = [NSURL URLWithString:secureURLString];
+        return url;
+    }];
 }
 
 + (NSValueTransformer *)thumbnailURLJSONTransformer {
-    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
+                                                                 BOOL *success,
+                                                                 NSError *__autoreleasing *error) {
+        NSString *secureURLString = [urlString stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
+        NSURL *url = [NSURL URLWithString:secureURLString];
+        return url;
+    }];
 }
 
 + (NSValueTransformer *)imageURLJSONTransformer {
-    return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
+    return [MTLValueTransformer transformerUsingForwardBlock:^id(NSString *urlString,
+                                                                 BOOL *success,
+                                                                 NSError *__autoreleasing *error) {
+        NSString *secureURLString = [urlString stringByReplacingOccurrencesOfString:@"http://" withString:@"https://"];
+        NSURL *url = [NSURL URLWithString:secureURLString];
+        return url;
+    }];
 }
 
 + (NSArray *)getModelsFromArray:(NSArray *)JSONarray

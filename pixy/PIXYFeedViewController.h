@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PIXYFeedViewController.h
 //  pixy
 //
 //  Created by Dana Shakiba on 5/14/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface PIXYFeedViewController : UIViewController
 
 
 @end
